@@ -12,13 +12,13 @@ import com.googlecode.genericdao.search.Search;
 
 import static org.geoserver.geofence.core.dao.util.SearchUtil.*;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.geoserver.geofence.core.model.enums.InsertPosition;
 import org.geoserver.geofence.core.dao.AdminRuleDAO;
 import org.geoserver.geofence.core.dao.DuplicateKeyException;
 import org.geoserver.geofence.core.model.AdminRule;
 
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
 
 import org.springframework.transaction.annotation.Transactional;
 

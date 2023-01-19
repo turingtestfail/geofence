@@ -5,6 +5,8 @@
 
 package org.geoserver.geofence.services.rest.impl;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.geoserver.geofence.services.RuleAdminService;
 import org.geoserver.geofence.services.dto.ShortGroup;
 import org.geoserver.geofence.services.rest.RESTRuleService;
@@ -15,8 +17,6 @@ import org.geoserver.geofence.services.rest.model.RESTOutputRuleList;
 import org.geoserver.geofence.services.rest.model.RESTShortUser;
 import org.geoserver.geofence.services.rest.model.RESTShortUserList;
 import org.geoserver.geofence.services.rest.model.config.RESTFullUserGroupList;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
 
 import org.junit.AfterClass;
 import org.junit.Before;

@@ -12,10 +12,9 @@ import com.googlecode.genericdao.search.ISearch;
 import org.geoserver.geofence.core.dao.GSInstanceDAO;
 import org.geoserver.geofence.core.model.GSInstance;
 
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
 import org.springframework.transaction.annotation.Transactional;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Public implementation of the GSInstanceDAO interface

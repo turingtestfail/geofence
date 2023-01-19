@@ -16,9 +16,8 @@ import com.googlecode.genericdao.search.Field;
 import com.googlecode.genericdao.search.ISearch;
 import com.googlecode.genericdao.search.Search;
 
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
@@ -31,7 +30,7 @@ public abstract class PrioritizableDAOImpl<T extends Prioritizable>
         extends BaseDAO<T, Long>
         implements PrioritizableDAO<T>
 {
-    private static final Logger LOGGER = LogManager.getLogger(PrioritizableDAOImpl.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(PrioritizableDAOImpl.class);
     
     protected long persist(Class<T> clazz, T entity, InsertPosition position) {
         switch(position) {

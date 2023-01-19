@@ -6,6 +6,8 @@
 package org.geoserver.geofence.core.dao.impl;
 
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.geoserver.geofence.core.dao.GFUserDAO;
 import org.geoserver.geofence.core.model.GFUser;
 
@@ -15,8 +17,6 @@ import java.util.List;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.googlecode.genericdao.search.ISearch;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
 
 
 /**
