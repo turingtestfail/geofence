@@ -42,6 +42,7 @@
 	        
         <gwt.version>2.4.0</gwt.version>
         <extjs.version>2.2.5-gwt22</extjs.version>
+        <log4j-version>2.7</log4j-version>
     </properties>
 
     <modules>
@@ -582,14 +583,17 @@
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-api</artifactId>
+                <version>${log4j-version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-core</artifactId>
+                <version>${log4j-version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-slf4j-impl</artifactId>
+                <version>${log4j-version}</version>
             </dependency>
 
             <!-- =========================================================== -->
